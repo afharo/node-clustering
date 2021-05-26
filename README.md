@@ -1,3 +1,5 @@
+[![Node.js CI](https://github.com/afharo/node-clustering/actions/workflows/main.yml/badge.svg)](https://github.com/afharo/node-clustering/actions/workflows/main.yml)
+
 # node-clustering
 
 Tests about how to best implement mission-specific workers with node `cluster`.
