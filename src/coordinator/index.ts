@@ -1,4 +1,4 @@
-import { fork } from "cluster";
+import cluster from "cluster";
 import type { Worker } from "cluster";
 import { server as HapiServer } from "@hapi/hapi";
 import type { ProtocolMessage, RunningMode } from "../protocol";
@@ -23,7 +23,7 @@ const workers = new Map<string, { worker: Worker; modes: RunningMode[] }>();
  */
 function createWorkers(numberOfWorkers = 10) {
   while (workers.size < numberOfWorkers) {
-    const worker = fork();
+    const worker = cluster.fork();
     const workerId = `${worker.id}`;
     workers.set(workerId, { worker, modes: ["*"] }); // By default all workers do all kind of tasks
 
