@@ -1,9 +1,9 @@
-import { isMaster } from "cluster";
+import cluster from "cluster";
 import { startCoordinator } from "./coordinator";
 import { startWorker } from "./worker";
 
 function startProcess() {
-  if (isMaster) {
+  if (cluster.isPrimary) {
     return startCoordinator({ numberOfWorkers: 10 });
   } else {
     return startWorker();
