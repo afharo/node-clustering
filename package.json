@@ -25,7 +25,6 @@
   },
   "homepage": "https://github.com/afharo/node-clustering#readme",
   "devDependencies": {
-    "@types/hapi__hapi": "20.0.13",
     "@types/node": "20.12.7",
     "prettier": "3.2.5",
     "typescript": "5.4.5"
