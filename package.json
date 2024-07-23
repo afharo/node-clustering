@@ -28,7 +28,7 @@
     "@types/node": "20.14.11",
     "joi": "^17.13.0",
     "prettier": "3.3.3",
-    "typescript": "5.5.3"
+    "typescript": "5.5.4"
   },
   "dependencies": {
     "@hapi/hapi": "21.3.10"
