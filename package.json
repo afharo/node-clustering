@@ -31,6 +31,6 @@
     "typescript": "5.7.3"
   },
   "dependencies": {
-    "@hapi/hapi": "21.3.12"
+    "@hapi/hapi": "21.4.0"
   }
 }
